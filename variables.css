@@ -1,0 +1,26 @@
+:root {
+  /* Paleta de cores (8 cores) */
+  --cor-primaria: #2a7ae4;
+  --cor-secundaria: #f25f4c;
+  --cor-terciaria: #f9a826;
+  --cor-neutra-clara: #f9f9f9;
+  --cor-neutra-media: #ccc;
+  --cor-neutra-escura: #333;
+  --cor-sucesso: #4caf50;
+  --cor-erro: #e53935;
+
+  /* Tipografia (5 tamanhos) */
+  --fonte-grande: 2.5rem;
+  --fonte-media: 1.5rem;
+  --fonte-normal: 1rem;
+  --fonte-pequena: 0.875rem;
+  --fonte-mini: 0.75rem;
+
+  /* Espaçamento modular */
+  --esp-1: 8px;
+  --esp-2: 16px;
+  --esp-3: 24px;
+  --esp-4: 32px;
+  --esp-5: 48px;
+  --esp-6: 64px;
+}

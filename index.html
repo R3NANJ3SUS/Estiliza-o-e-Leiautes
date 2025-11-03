@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="logo">Meu<span>Portfólio</span></div>
+
+    <!-- Menu desktop -->
+    <nav class="nav">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li class="dropdown">
+          <a href="#">Projetos ▾</a>
+          <ul class="submenu">
+            <li><a href="#">Web</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Outros</a></li>
+          </ul>
+        </li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu mobile -->
+    <div class="menu-mobile" id="menu-btn">☰</div>
+  </header>
+
+  <!-- Menu mobile dropdown -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#inicio">Início</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <!-- Seção de destaque -->
+  <section id="inicio" class="hero">
+    <h1>Bem-vindo ao meu portfólio</h1>
+    <p>Aqui compartilho alguns dos meus projetos e aprendizados em desenvolvimento web.</p>
+    <button class="btn">Ver Projetos</button>
+  </section>
+
+  <!-- Seção de projetos -->
+  <section id="projetos" class="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="imagen/projetoW1.jpg" alt="Projeto 1">
+        <h3>Projeto Web</h3>
+        <span class="tag tag-web">Web</span>
+        <p>Um site desenvolvido com HTML, CSS e JS.</p>
+        <button class="btn">Ver mais</button>
+      </div>
+
+      <div class="card">
+        <img src="imagen/projetoG1..jpg" alt="Projeto 2">
+        <h3>Design Criativo</h3>
+        <span class="tag tag-design">Design</span>
+        <p>Layout moderno feito com CSS Grid e Flexbox.</p>
+        <button class="btn">Ver mais</button>
+      </div>
+
+      <div class="card">
+        <img src="imagen/projetoL1.jpg" alt="Projeto 3">
+        <h3>Landing Page</h3>
+        <span class="tag tag-marketing">Marketing</span>
+        <p>Página de divulgação com formulário funcional.</p>
+        <button class="btn">Ver mais</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de contato -->
+  <section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Modal de feedback (simples) -->
+  <div class="alerta">
+    <p>Mensagem enviada com sucesso!</p>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>© 2025 - Desenvolvido por Renan de Jesus</p>
+  </footer>
+
+  <script>
+    // Menu mobile
+    const btn = document.getElementById('menu-btn');
+    const nav = document.getElementById('mobile-nav');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
